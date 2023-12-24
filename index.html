@@ -1,98 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title> MY WEBSITE</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   -->
-
-    <style>
-    *{
-	margin: 0;
-	padding: 0;
-	font-family: Century Gothic;
-    }
-    div{
-        display: inline;
-        }
-
-    header{
-        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(aa.jpg);
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-        min-height: 100px;
-    }
-    ul{
-        float:right;
-        list-style-type: none;
-        margin-top: 30px;
-        margin-right:60px ;
-    }
-    ul li{
-        display: inline-block;
-    }
-    ul li a{
-        text-decoration: none;
-        color: #fff;
-        padding: 5px 20px;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-
-    }
-
-    ul li a:hover{
-        background-color: #fff;
-        color: #000;
-    }
-
-    ul li.active a{
-    background-color:#fff;
-        color: #000;
-
-    }
-
-    .logo img{
-        float: left;
-        width: 150px;
-        height: auto;
-    }
-
-    .main{
-        max-width: 1200px;
-        margin: auto;
-    }
-
-    .title{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-    }
-
-    .title h1{
-        color: #fff;
-        font-size: 65px;
-    }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Delicious Bites</title>
 </head>
 <body>
-	<header>
-		<div class="main">
-		<div class="logo">
-			<img src="logo.png">
-		</div>
-		
-		 <ul>
-		 <li class="active"><a href="#">Home</a></li>
-		 <li><a href="hugot_title.html">Hugot lines</a></li>
-		 <li><a href="about.html">About</a></li>
-		 <li><a href="contact.html">Contact</a></li>
-		 </div>
 
-		 <div class="title">
-		 	<h1>JANRIX HUGOT LINES</h1>
-		 </div>
+  <header>
+    <h1>Delicious Bites Restaurant</h1>
+    <h1>by @janrix tampus</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#order-now">Order Now</a></li>
+        <li><a href="#discover-dishes">Discover New Dishes</a></li>
+        <li><a href="#reserve-table">Reserve a Table</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-		 	</header>
+  <main class="container">
+    <section id="home" class="page">
+        <h2>Welcome to Delicious Bites Restaurant!</h2>
+        <p>Discover a world of culinary delights that will tantalize your taste buds.</p>
+      
+        <div class="featured-dish">
+          <img src="food1.jpg" alt="Featured Dish">
+          <h3>Featured Dish</h3>
+          <p>Indulge in our exquisite featured dish, a perfect blend of flavors and textures.</p>
+          <p class="price">19.99</p>
+        </div>
+      
+        <div class="special-offers">
+          <h3>Special Offers</h3>
+          <p>Check out our daily specials and enjoy incredible discounts on selected dishes.</p>
+        </div>
+      
+      </section>
+    
+
+<section id="order-now" class="page">
+    <h2>Order Now</h2>
+    <p>Place your order online and enjoy our delicious dishes at the comfort of your home.</p>
+  
+    <div class="order-options">
+      <div class="delivery">
+        <h3>Delivery</h3>
+        <p>Get your favorite meals delivered to your doorstep.</p>
+        <p>Delivery time: 30-45 minutes</p>
+        
+        <a href="#order-delivery" class="order-button">Order Delivery</a>
+      </div>
+  
+      <div class="takeout">
+        <h3>Takeout</h3>
+        <p>Order in advance and pick up your meal at our restaurant.</p>
+        <p>Ready for pickup in: 15-20 minutes</p>
+        
+        <a href="#order-takeout" class="order-button">Order Takeout</a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+<section id="discover-dishes" class="page">
+    <h2>Discover New Dishes</h2>
+    
+    <div class="dish">
+      <img src="food2.jpg" alt="Dish 1">
+      <h3>Spicy Shrimp Tacos</h3>
+      <p>Delight your senses with our mouth-watering spicy shrimp tacos. A perfect fusion of flavors and spice.</p>
+      <p class="price">14.99</p>
+    </div>
+  
+    <div class="dish">
+      <img src="food3.jpg" alt="Dish 2">
+      <h3>Mango Tango Salad</h3>
+      <p>Experience the freshness of our Mango Tango Salad. A vibrant mix of mango, greens, and zesty dressing.</p>
+      <p class="price">10.99</p>
+    </div>
+  
+    
+  </section>
+  
+  
+
+<section id="reserve-table" class="page">
+    <h2>Reserve a Table</h2>
+    
+    <p>Make your dining experience special by reserving a table in advance. Whether it's a romantic dinner for two or a gathering with friends, we're here to ensure you have an enjoyable time.</p>
+  
+    <div class="reservation-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name">
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email">
+  
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+  
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date">
+  
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time">
+  
+      <button type="submit" class="reserve-button">Reserve Now</button>
+    </div>
+  </section>
+  
+ 
+  
+
+    <section id="cart" class="page">
+      <h2>Your Cart</h2>
+      <p>Your delicious items are waiting for you.</p>
+    </section>
+
+    <section id="menu" class="page">
+      <h2>Menu</h2>
+      <div class="menu-item">
+        <h3>Special Dish</h3>
+        <p>A delightful combination of flavors.</p>
+        <p class="price">12.99</p>
+      </div>
+      <div class="menu-item">
+        <h3>Signature Dessert</h3>
+        <p>Sweetness that melts in your mouth.</p>
+        <p class="price">8.99</p>
+      </div>
+      
+    </section>
+
+    <section id="contact" class="page">
+      <h2>Contact Me</h2>
+      <div class="menu-item">
+        <h3>Hello Everyone</h3>
+        <p>Developer Janrix Tampus</p>
+        <p class="price">Click The Link Below</p>
+      </div>
+      <div class="menu-item">
+        <h3>Click <a href="https://www.facebook.com/profile.php?id=100073700445793" target="_blank">This Link</a> To Contact Me</h3>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Delicious Bites Restaurant. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
